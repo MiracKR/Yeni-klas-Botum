@@ -8,6 +8,24 @@ require('./util/eventLoader')(client);
 
 var prefix = ayarlar.prefix;
 
+
+// BURASI SÜREKLİ AÇIK KALMA KODU
+const http = require("http");
+const express = require("express");
+const app = express();
+
+
+app.get("/", (request, response) => {
+  console.log(Date.now() + "Pinged.");
+  response.sendStatus(200);
+});
+app.listen(process.env.PORT);
+setInterval(() => {
+  http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
+}, 280000);
+// BURASI SÜREKLİ AÇIK KALMA KODU
+
+
 const log = message => {
   console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] ${message}`);
 };

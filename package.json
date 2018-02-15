@@ -1,17 +1,19 @@
 {
-  "name": "MiroBot",
-  "version": "0.0.1",
-  "description": "",
+  "name": "miroBot",
+  "version": "1.0.0",
+  "description": "dsadsa",
   "main": "bot.js",
   "scripts": {
-    "test": "node bot.js"
+    "start": "npm install && node bot.js"
   },
-  "engines": { "node": "8.4.0" },
+  "engines": {
+    "node": "8.4.0"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/MiracKR/botum.git",
+    "url": "https://github.com/MiracKR/botum.git"
   },
-  "author": "Miraç",
+  "author": "mirac",
   "license": "ISC",
   "dependencies": {
     "chalk": "^2.3.0",
@@ -19,6 +21,8 @@
     "discord.js": "^11.3.0",
     "moment": "^2.20.1",
     "moment-duration-format": "^2.2.1",
-    "ms": "^2.1.1"
+    "ms": "^2.1.1",
+    "express": "^4.16.2",
+    "expres": "^0.0.5"
   }
 }
